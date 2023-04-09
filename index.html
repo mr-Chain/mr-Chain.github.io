@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Image Background and Text Overlay</title>
+    <style>
+      /* Header styles */
+      header {
+        background-image: url("base starting bitcoin2-01.png");
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+      header h1 {
+        font-family: Arial, sans-serif;
+        font-size: 60px;
+        margin-top: 0;
+      }
+      header h2 {
+        font-family: Arial, sans-serif;
+        font-size: 32px;
+        margin-bottom: 0;
+      }
+      header h3 {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+      header p {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        header {
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+        header h1 {
+          font-size: 36px;
+        }
+        header h2 {
+          font-size: 18px;
+        }
+        header h3 {
+          font-size: 36px;
+        }
+        header p {
+          font-size: 18px;
+        }
+      }
+      @media (max-width: 576px) {
+        header {
+          padding-top: 75px;
+          padding-bottom: 75px;
+        }
+        header h1 {
+          font-size: 24px;
+        }
+        header h2 {
+          font-size: 16px;
+        }
+        header h3 {
+          font-size: 16px;
+        }
+        header p {
+          font-size: 16px;
+        }
+      }
+
+      /* Body styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fed226;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+      }
+      
+      h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: left;
+        margin: 20px;
+        margin-top: 20px;
+        margin-left: 200px;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+
+      h4 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fed226;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #666;
+        font-size: 20px;
+        text-align: justify;
+        margin: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+      }
+
+      p1 {
+        color: #ee1fa2;
+        text-align: center;
+	margin: 20px;
+      }
+
+      p2 {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      p3 {
+        color: #ffff;
+        text-align: justify;
+        margin: 20px;
+	margin-left: 80px;
+	margin-right: 80px;
+      }
+
+      p4 {
+        color: #ffff;
+        font-weight: normal;
+        text-align: left;
+        margin: 20px;
+	margin-left: 20px;
+      }
+
+	.paragraph {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+      p5 {
+        color: #666;
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+      }
+
+
+	/* Titoletti di stile diverso nello stesso paragrafo */
+      .style-1 {
+        color: #666;
+	font-weight: bold;
+      }
+
+      .link-style {
+	text-decoration: none !important;
+	border-bottom: none !important;
+        color: #666;
+	font-weight: normal;
+	font-style: italic;
+      }
+
+      .link-TG {
+	text-decoration: none !important;
+        color: #ffff;
+	border-bottom: none !important;
+	font-weight: normal;
+	font-style: italic;
+      }
+
+
+	/* Immagine di sfondo con i libri e scritta sopra */
+	.container-2 {
+	  display: flex;
+	  background-image: url("libri_1.jpg");
+	  background-size: cover;
+          position: relative;
+	  background-position: center;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  margin-top: 50px;
+	  margin-bottom: 20px;
+	  height: 700px;
+	}
+
+	.text-container {
+	  position: relative;
+	  top: 10px;
+	  left: 100px;
+	  height: 300px;
+	  width: 35%;
+	}
+
+
+
+	/* box con immagini e testo */
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 50px;
+	  	margin-top: 20px;
+  		justify-content: center;
+		align-items: center;
+	}
+
+	.box {
+		
+		margin: 10px;
+		padding: 80px 10px;
+
+		width: 370px;
+		height: 500px;
+		border: 1px solid #ccc;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.box img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.box h2 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.box p {
+        	font-size: 16px;
+		line-height: 1.5;
+		margin: 10px;
+		text-align: center;
+	}
+
+
+
+	/* Banner con testo */
+	.section {
+		background-image: url("100px_banner.png");
+		background-size: cover;
+		background-position: center;
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+	}
+	.section p {
+		margin: 10px;
+		padding: 10px;
+	}
+
+  
+	  .button:hover {
+	    background-color: #3e8e41;
+	  }
+
+
+	/* Button styles 4 pulsanti store online */
+	.btn {
+		display: inline-block;
+		padding: 10px 20px;
+		min-width: 100px;
+		background-color: #333;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	/* Button hover styles */
+	.btn:hover {
+		background-color: #666;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* Button container styles */
+	.btn-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+
+
+	/* Dettagli del libro */
+	.container-3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	  	background-color: #f0f5f5;
+		margin-left: 0px;
+	  	margin-right: 0px;
+	  	margin-top: 0px;
+	  	margin-bottom: 0px;
+  		justify-content: center;
+		align-items: center;
+	}
+
+	.box-3 {
+		margin: 0px;
+		margin-left: 30px;
+		margin-right: 30px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.box-3 h2 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.box-3 p {
+        	font-size: 20px;
+		line-height: 1.5;
+		margin: 10px;
+		text-align: left;
+	}
+
+
+	/* Summary */
+	.container-4 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	  	background-color: #f0f5f5;
+		margin-left: 0px;
+	  	margin-right: 0px;
+	  	margin-top: 0px;
+	  	margin-bottom: 0px;
+  		justify-content: center;
+		align-items: center;
+	}
+
+
+	footer {
+		font-size: 16px;
+        	background-image: url("base starting bitcoin2-01.png");
+        	background-size: cover;
+        	background-position: center center;
+		border: 1px solid #ccc;
+		bottom: 0;
+		margin-top: 50px
+		height: 2.5rem;
+		text-align: center;
+	}
+
+	.container-5 {
+	  margin-left: 200px;
+	  margin-right: 200px;
+	  margin-top: 50px;
+	  margin-bottom: 50px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.footer-logo img {
+	  height: 50px;
+	}
+	
+	.footer-info p {
+	  margin: 0;
+	  font-size: 16px;
+	  color: #fed226;
+	}
+
+	.footer-info p:first-child {
+	  font-weight: bold;
+	  margin-bottom: 10px;
+	}
+
+	.container-6 {
+	  margin-left: 200px;
+	  margin-right: 200px;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.footer-info-2 p {
+	  margin: 0;
+	  font-size: 16px;
+	  color: #ffff;
+	}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+	<!-- Header con immagine e scritta sopra -->
+      <h1>STARTING BITCOIN</h1>
+      <h2>William Chain</h2>
+    </header>
+
+
+	<!-- Testo sotto l'Header -->
+	<div class="header-text">
+		<h3>Starting Bitcoin</h3>
+		<p>
+		   <span class="style-1">Starting Bitcoin è una guida dedicata a tutte le persone che vogliono conoscere il mondo di Bitcoin approcciandosi senza pregiudizi e il suo obiettivo è quello di porsi come filtro tra il rumore di fondo e il segnale puro nella moltitudine di informazioni in cui l’ecosistema Bitcoin è avvolto.</span>
+		</p>
+		<p>Partendo dalle prime forme di scambi commerciali, si capiranno alcuni principi chiave dell’economia radicati all’epoca del baratto e mantenuti fino alle prime monete elettroniche. Dopo aver capito quali sono tutte le sue definizioni, si potrà approfondire in maniera ancora più dettagliata il suo percorso evolutivo: partendo dall’approccio decentralizzato della <strong>tecnologia Peer To Peer</strong> attraverso la <strong>Firma Digitale</strong> e la <strong>Prova del Lavoro</strong>, fino ad arrivare alla nascita della Blockchain e delle applicazioni per il trasferimento e la custodia di bitcoin. Il protocollo Bitcoin e la sua terminologia verranno spiegati attraverso un <strong>approccio didattico e puntuale</strong>, fondamentale per permettere di raggiungere un livello di conoscenza approfondita delle tecnologie, delle regole e del funzionamento del Bitcoin stesso.</p>
+		<p>Solo attraverso la piena comprensione dell’argomento sarà possibile dipanare i preconcetti che ruotano attorno al Bitcoin e costruirsi la propria opinione avendo maggior consapevolezza della materia.</p>
+	</div>
+
+
+	<!-- Immagine di sfondo con i libri e scritta sopra -->
+	<div class="container-2">
+	    <div class="text-container">
+	      <h4>IL LIBRO PER INIZIARE A COMPRENDERE BITCOIN</h4>
+	      <p2>Il giusto trampolino per tuffarti nella tana del bianconiglio.</p2>
+	    </div>
+	</div>
+
+
+	<!-- Summary -->
+
+	<div class="container-4">
+	  <h3>Summary</h3>
+	</div>
+	 <section id="summary">
+	      <div class="container-3">
+		<div class="box-3">
+	        	<p>
+			  <span class="style-1">ARGOMENTI TRATTATI: </span>
+			</p>
+		</div>
+		<div class="box-3">
+	        	<p>&#x2713; Perchè nasce Bitcoin</p>
+	        	<p>&#x2713; Cos'è Bitcoin e come si sviluppa</p>
+	        	<p>&#x2713; Cos'è la Blockchain</p>
+	        	<p>&#x2713; Come funzionano le transazioni</p>
+	        	<p>&#x2713; Cosa sono i Wallet</p>
+		</div>
+	      </div>
+	 </section>
+
+	<div class="container-4">
+	 <div class="paragraph">
+		<p5>Vuoi approfondire di più i contenuti? Dai un'occhiata all'<a href="Indice_2.html"<span class="link-style">indice del libro</span></a></p5>
+	 </div>
+	</div>
+
+	<h3>Dove acquistare il libro</h3>
+
+	<!-- Immagini e testo -->
+	<div class="container">
+		<div class="box">
+			<img src="Libro_Amazon.jpg" alt="Image 1">
+			<h3> <a href="https://www.amazon.it/Starting-Bitcoin-William-Chain/dp/B0BHMV33TX/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1RFM0H11Q6PVU&keywords=starting+bitcoin&qid=1679905780&sprefix=%2Caps%2C126&sr=8-1">Amazon</a></h3>
+			<p>Acquista il libro direttamente sullo store di Amazon</p>
+		</div>
+
+		<div class="box">
+			<img src="Libro_Amazon.jpg" alt="Image 2">
+			<h3> <a href="https://www.youcanprint.it/starting-bitcoin/b/75700360-ca86-5d45-8a08-29a83ed57eab">Youcanprint</a></h3>
+			<p>Acquista il libro direttamente sullo store di Youcanprint</p>
+		</div>
+	</div>
+
+
+	<!-- Banner con testo -->
+	</div>
+	<div class="section">
+		<div class="text">
+			<p3>Vuoi acquistare il libro in Bitcoin? Contattami su <a href="https://t.me/william.chain" <span class="link-TG">Telegram</span></a>.</p3>
+		</div>
+	</div>
+
+
+	<!-- Prove 4 pulsanti link -->
+	<h3>Altri siti online dove acquistare il libro</h3>
+	<div class="paragraph">
+		<p5>Stanco di dover sempre acquistare i tuoi libri su Amazon? Starting Bitcoin lo puoi trovare anche nelle tue librerie preferite:</p5>
+	</div>
+
+
+	<div class="btn-container">
+		<a href="https://www.ibs.it/starting-bitcoin-libro-william-chain/e/9791221424089" class="btn">ibs</a>
+		<a href="https://www.lafeltrinelli.it/starting-bitcoin-libro-william-chain/e/9791221424089?queryId=b58dcef3179c91203103382af28afbdc" class="btn">laFeltrinelli</a>
+		<a href="https://www.libraccio.it/libro/9791221424089/william-chain/starting-bitcoin.html" class="btn">LIBRACCIO</a>
+		<a href="https://www.mondadoristore.it/Starting-bitcoin-William-Chain/eai979122142408/" class="btn">Mondadori Store</a>
+	</div>
+
+
+	<!-- prove -->
+	<main>
+	<div class="container-4">
+	  <h3>Dettagli del libro</h3>
+	</div>
+	      <div class="container-3">
+		<div class="box-3">
+	        	<p>
+			  <span class="style-1">AUTORE: </span> William Chain
+			</p>
+	        	<p>
+			  <span class="style-1">PREFAZIONE: </span> Federico Tenga
+			</p>
+	        	<p>
+			  <span class="style-1">EDITORE: </span> Youcanprint
+			</p>
+	        	<p>
+			  <span class="style-1">ANNO: </span> 2022/09
+			</p>
+	        	<p>
+			  <span class="style-1">CODICE ISBN: </span> 979-12-21424-08-9
+			</p>
+		</div>
+		<div class="box-3">
+	        	<p>
+			  <span class="style-1">RILEGATURA: </span> Copertina Flessibile
+			</p>
+	        	<p>
+			  <span class="style-1">PAGINE: </span> 101
+			</p>
+	        	<p>
+			  <span class="style-1">DIMENSIONI: </span> 15,2 x 22,9 cm
+			</p>
+	        	<p>
+			  <span class="style-1">PESO: </span> 197 g
+			</p>
+	        	<p>
+			  <span class="style-1">PREZZO DI COPERTINA: </span> € 15,90
+			</p>
+			<p>
+			  <span class="style-1">LINGUA: </span> Italiano
+			</p>
+		</div>
+	     </div>
+
+	      <section id="author">
+	        <h3>L'Autore</h3>
+	        <p>Ingegnere e appassionato di tecnologia e finanza personale, l'autore si affaccia al mondo di Bitcoin per pura speculazione ma capisce poco dopo di quanto questo aspetto sia solo la punta dell'iceberg. Da quel momento inizia un lungo viaggio alla scoperta di cosa sia veramente Bitcoin, come funzioni e cosa rappresenti per ognuno di noi.</p>
+		<p>In questi anni di studio, l'autore si sente in dovere di fare anche lui la sua parte aiutando quanto più possibile tutti quelli che si avvicinano, per un motivo o per l'altro, a questa tecnologia. Da qui nasce l'idea di scrivere e pubblicare un manuale non troppo superficiale e introduttivo ma nemmeno troppo tecnico, che possa essere il giusto supporto per iniziare col piede giusto quest'avventura nel vasto mondo di Bitcoin.</p>
+	      </section>
+
+	      <section id="reviews">
+	        <p>
+		  <span class="style-1">Prima Edizione: </span> settembre 2022.
+		</p>
+	        <p>&nbsp;</p>
+	      </section>
+	</main>
+
+	<footer>
+	  <div class="container-5">
+	    <div class="footer-info">
+	      <p><strong>Contatti:</strong></p>
+	      <p>t.me/william.chain</p>
+	      <p>mr.chain@tutanota.com</p>
+		<!-- <p>linkedin.com/in/william-chain/</p> -->
+	      <p>&nbsp;</p>
+	    </div>
+	  </div>
+	  <div class="container-6">
+	    <div class="footer-info-2">
+	      <p>Copyright © 2022 Starting Bitcoin</p>
+	    </div>
+
+	  </div>
+	</footer>
+
+
+  </body>
+</html>
