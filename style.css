@@ -1,0 +1,993 @@
+/* Header styles */
+/* Header styles generico */
+header {
+    background-image: url("img/base_starting_bitcoin2-01.png");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+/* Header styles titolo generico */
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fed226;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+/* Header styles paragrafo generico */
+header p {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    margin: 20px 20px 0px 200px;
+}
+
+
+
+/* Body styles */
+/* Body styles generico */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0%;
+}
+
+/* Body styles titolo generico */
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Body styles paragrafo generico */
+p {
+    color: #666;
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+    /* Titoletti di stile diverso nello stesso paragrafo */
+    .style-1 {
+        color: #666;
+        font-weight: bold;
+    }
+
+    /* Titoletti di stile diverso nello stesso paragrafo */
+    .style-2 {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        margin: auto;
+    }
+
+/* Body styles primo contenitore: Descrizione progetto libro */
+.c1_descrizione {
+    margin: auto;
+}
+
+/* Body styles secondo contenitore: Immagine di sfondo con i libri e scritta sopra */
+.c2_adv {
+    display: flex;
+    background-image: url("img/libri_1.JPG");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    margin: 50px 0px 20px 0px;
+    height: 700px;
+}
+    /* Testo su immagine di sfondo con i libri */
+    .text-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* height: 300px; */
+        width: 35%;
+        padding-left: 100px;
+    }
+    /* Testo su immagine di sfondo con i libri */
+    .text-container h3 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fed226;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    /* Testo su immagine di sfondo con i libri */
+    .text-container p {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        margin: auto;
+    }
+
+/* Body styles terzo contenitore: Summary */
+.c3_summary {
+    margin: auto;
+}
+    /* Dettagli del container */
+    .container_1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #f0f5f5;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Box nel container */
+    .box-1 {
+        margin: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+        /* Stile del titolo del box */
+        .box-1 h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        /* Stile del paragrafo del box */
+        .box-1 p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 10px;
+            text-align: left;
+        }
+    /* Stile del paragrafo del box */
+    .approfondimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Body styles quarto contenitore: Sezione d'acquisto */
+.c4_acquisto {
+    margin: auto;
+}
+    /* box con immagini e testo */
+    /* Dettagli del container */
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Box nel container */
+    .box {
+        margin: 10px;
+        padding: 80px 10px;
+        width: 370px;
+        height: 500px;
+        border: 1px solid #ccc;
+        text-align: center;
+        justify-content: center;
+    }
+        /* Stile delle immagini del box */
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        /* Stile del titolo del box */
+        .box h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        /* Stile del paragrafo del box */
+        .box p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+            text-align: center;
+        }
+    /* Banner con testo */
+    .banner {
+        background-image: url("img/100px_banner.png");
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+        /* Stile del paragrafo del banner */
+        .style-3 {
+            color: #ffff;
+            font-size: 24px;
+            text-align: justify;
+            margin: 20px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        /* Stile dei link generico */
+        .link-indice {
+            text-decoration: none !important;
+            border-bottom: none !important;
+                color: #666;
+            font-weight: normal;
+            font-style: italic;
+        }
+            .link-indice:hover{
+                color: #bbbbbb;
+                text-decoration: none;
+            }    
+        /* Stile del link telegram nel banner */
+        .link-TG {
+            text-decoration: none !important;
+            color: #ffff;
+            border-bottom: none !important;
+            font-weight: normal;
+            font-style: italic;
+        }
+            .link-TG:hover{
+                color: #bbbbbb;
+                text-decoration: none;
+            }
+    /* Button styles 4 pulsanti store online */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        min-width: 100px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+        /* Button hover styles */
+        .btn:hover {
+            background-color: #666;
+            color: #fff;
+            text-decoration: none;
+        }
+    /* Button container styles */
+    .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+/* Body styles quinto contenitore: Dettagli del libro */
+.c5_dettagli {
+    margin: auto;
+}
+
+/* Body styles sesto contenitore: Autore */
+.c6_autore {
+    margin: auto;
+}
+
+/* Footer styles */
+/* Footer styles generico */
+footer {
+    font-size: 16px;
+    background-image: url("img/base_starting_bitcoin2-01.png");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #ccc;
+    bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+/* Dettagli del container */
+.container-2 {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Dettagli del container */
+.container-3 {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Footer styles immagine generica */
+.footer-logo img {
+    height: 50px;
+}
+/* Footer styles lista */
+.footer-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #fed226;
+}
+/* Footer styles lista */
+.footer-info p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Footer styles lista */
+.footer-info-2 p {
+    margin: 0;
+    font-size: 16px;
+    color: #ffff;
+}
+
+
+
+
+
+/* pg_indice Styles */
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f0f5f5;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.container-4 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: left;
+}
+.style-1 {
+    color: #666;
+    font-weight: bold;
+}
+.capitoli {
+    color: #666;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.box-3 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 390px;
+    height: 255px;
+    text-align: center;
+    justify-content: center;
+}
+.box-4 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 255px;
+    text-align: center;
+    justify-content: center;
+}
+.box-5 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 390px;
+    height: 290px;
+    text-align: center;
+    justify-content: center;
+}
+.box-6 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 290px;
+    text-align: center;
+    justify-content: center;
+}
+.box-7 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 390px;
+    height: 190px;
+    text-align: center;
+    justify-content: center;
+}
+.box-8 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 190px;
+    text-align: center;
+    justify-content: center;
+}
+.box-9 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 390px;
+    height: 225px;
+    text-align: center;
+    justify-content: center;
+}
+.box-10 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 225px;
+    text-align: center;
+    justify-content: center;
+}
+.box-11 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 390px;
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+}
+.box-12 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+
+/* sotto i 1200px - laptop*/
+@media (max-width: 1200px) {
+    header {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    header h1 {
+        font-size: 48px;
+        margin-left: 150px;
+    }
+    header p {
+        font-size: 36px;
+        margin-left: 150px;
+    }
+    /* Body styles titolo generico */
+    h2 {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    /* Body styles paragrafo generico */
+    p {
+        font-size: 18px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    /* Body styles secondo contenitore: Immagine di sfondo con i libri e scritta sopra */
+    .c2_adv {
+        margin: 35px 0px 15px 0px;
+        height: 700px;
+    }
+    .text-container {
+        width: 37%;
+        padding-left: 60px;
+    }
+    .text-container h3 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .text-container p {
+        font-size: 22px;
+    }
+    /* Footer styles */
+    .container-2 {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .container-3 {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* sotto i 980px - tablet */
+@media (max-width: 980px) {
+    header {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    header h1 {
+        font-size: 36px;
+        margin-left: 100px;
+    }
+    header p {
+        font-size: 18px;
+        margin-left: 100px;
+    }
+    /* Body styles titolo generico */
+    h2 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    /* Body styles paragrafo generico */
+    p {
+        font-size: 18px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    /* Body styles secondo contenitore: Immagine di sfondo con i libri e scritta sopra */
+    .c2_adv {
+        margin: 15px 0px 10px 0px;
+        height: 700px;
+    }
+    .text-container {
+        width: 40%;
+        padding-left: 40px;
+    }
+    .text-container h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .text-container p {
+        font-size: 20px;
+    }
+    /* Footer styles */ 
+    footer {
+        font-size: 14px;
+    }
+    .container-2 {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .container-3 {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-info p {
+        font-size: 14px;
+    }
+    .footer-info p:first-child {
+        margin-bottom: 5px;
+    }
+    .footer-info-2 p {
+        font-size: 14px;
+    }
+}
+
+
+/* sotto i 767px - smartphone */
+@media (max-width: 767px) {
+    header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    header h1 {
+        font-size: 28px;
+        margin-left: 50px;
+    }
+    header p {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+    /* Body styles titolo generico */
+    h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* Body styles paragrafo generico */
+    p {
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /* Body styles secondo contenitore: Immagine di sfondo con i libri e scritta sopra */
+    .c2_adv {
+        margin: 10px 0px 5px 0px;
+        height: 700px;
+    }
+    .text-container {
+        width: 45%;
+        padding-left: 20px;
+    }
+    .text-container h3 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .text-container p {
+        font-size: 18px;
+    }
+    /* pg_indice Styles */
+    .header-text {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container-4 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container-4 p {
+        font-size: 14px;
+        margin: 10px;
+    }
+    .capitoli {
+        font-size: 18px;
+    }
+    .box-3 {
+        margin: 0px;
+        width: 340px;
+        height: 225px;
+    }
+    .box-4 {
+        margin: 0px;
+        width: 70px;
+        height: 225px;
+    }
+    .box-5 {
+        margin: 0px;
+        width: 340px;
+        height: 255px;
+    }
+    .box-6 {
+        margin: 0px;
+        width: 70px;
+        height: 255px;
+    }
+    .box-7 {
+        margin: 0px;
+        width: 340px;
+        height: 165px;
+    }
+    .box-8 {
+        margin: 0px;
+        width: 70px;
+        height: 165px;
+    }
+    .box-9 {
+        margin: 0px;
+        width: 340px;
+        height: 195px;
+    }
+    .box-10 {
+        margin: 0px;
+        width: 70px;
+        height: 195px;
+    }
+    .box-11 {
+        margin: 0px;
+        width: 340px;
+        height: 100px;
+    }
+    .box-12 {
+        margin: 0px;
+        width: 70px;
+        height: 100px;
+    }
+    /* Footer styles */
+    footer {
+        font-size: 12px;
+    }
+    .container-2 {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container-3 {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-info p {
+        font-size: 12px;
+    }
+    .footer-info p:first-child {
+        margin-bottom: 5px;
+    }
+    .footer-info-2 p {
+        font-size: 12px;
+    }
+}
+
+
+/* sotto i 412px - smartphone */
+@media (max-width: 412px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header h1 {
+        font-size: 26px;
+        margin-left: 30px;
+    }
+    header p {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    /* Body styles titolo generico */
+    h2 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    /* Body styles paragrafo generico */
+    p {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    /* Body styles secondo contenitore: Immagine di sfondo con i libri e scritta sopra */
+    .c2_adv {
+        margin: 10px 0px 5px 0px;
+        height: 500px;
+    }
+    .text-container {
+        width: 80%;
+        padding-left: 15px;
+    }
+    .text-container h3 {
+        font-size: 24px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .text-container p {
+        font-size: 16px;
+    }
+    /* Box nel container */
+    .box-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box-1 h2 {
+        margin-bottom: 10px;
+    }
+    .box-1 p {
+        font-size: 16px;
+        margin: 10px;
+    }
+    /* Banner con testo */
+    .banner {
+        height: 100px;
+        font-size: 24px;
+    }
+    .style-3 {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Box nel container */
+    .box {
+        margin: 10px;
+        padding: 40px 10px;
+        width: 370px;
+        height: 500px;
+    }
+    .box h2 {
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .box p {
+        font-size: 16px;
+        margin: 10px;
+    }
+    /* pg_indice Styles */
+    .header-text {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container-4 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container-4 p {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+    .capitoli {
+        font-size: 16px;
+    }
+    .box-3 {
+        margin: 0px;
+        width: 290px;
+        height: 205px;
+    }
+    .box-4 {
+        margin: 0px;
+        width: 60px;
+        height: 205px;
+    }
+    .box-5 {
+        margin: 0px;
+        width: 290px;
+        height: 235px;
+    }
+    .box-6 {
+        margin: 0px;
+        width: 60px;
+        height: 235px;
+    }
+    .box-7 {
+        margin: 0px;
+        width: 290px;
+        height: 150px;
+    }
+    .box-8 {
+        margin: 0px;
+        width: 60px;
+        height: 150px;
+    }
+    .box-9 {
+        margin: 0px;
+        width: 290px;
+        height: 180px;
+    }
+    .box-10 {
+        margin: 0px;
+        width: 60px;
+        height: 180px;
+    }
+    .box-11 {
+        margin: 0px;
+        width: 290px;
+        height: 95px;
+    }
+    .box-12 {
+        margin: 0px;
+        width: 60px;
+        height: 95px;
+    }
+    /* Footer styles */
+    footer {
+        font-size: 10px;
+    }
+    .container-2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container-3 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-info p {
+        font-size: 10px;
+    }
+    .footer-info p:first-child {
+        margin-bottom: 5px;
+    }
+    .footer-info-2 p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+    /* Banner con testo 
+    .banner {
+        background-image: url("img/100px_banner.png");
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+        .style-3 {
+            color: #ffff;
+            font-size: 24px;
+            text-align: justify;
+            margin: 20px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .link-indice {
+            text-decoration: none !important;
+            border-bottom: none !important;
+                color: #666;
+            font-weight: normal;
+            font-style: italic;
+        }
+            .link-indice:hover{
+                color: #bbbbbb;
+                text-decoration: none;
+            }    
+
+        .link-TG {
+            text-decoration: none !important;
+            color: #ffff;
+            border-bottom: none !important;
+            font-weight: normal;
+            font-style: italic;
+        }
+            .link-TG:hover{
+                color: #bbbbbb;
+                text-decoration: none;
+            }
+    */
+
